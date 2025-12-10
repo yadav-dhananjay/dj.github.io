@@ -1,42 +1,47 @@
-
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <title>Access Denied - Error</title>
-    <style type="text/css">
-        body {
-            font-family: sans-serif;
-            text-align: center;
-            padding: 50px;
-        }
-        .error-container {
-            border: 1px solid #ddd;
-            padding: 20px;
-            margin-top: 20px;
-            background-color: #f9f9f9;
-        }
-        /* You can style the content inside the box using its class ID */
-        .cf-error-details {
-            color: #d9534f;
-            font-weight: bold;
-        }
-    </style>
-</head>
-<body>
-    <h1>Access Denied</h1>
-    <p>Your request was blocked by the security policy. This is a 1XXX error.</p>
+<html lang="en">
 
-    <!-- The required token to display the specific 1XXX error details -->
-    <div class="error-container">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>
+    1000 - Internal Error
+  </title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.9.6/tailwind.min.css" integrity="sha512-l7qZAq1JcXdHei6h2z8h8sMe3NbMrmowhOl+QkP3UhifPpCW2MC4M0i26Y8wYpbz1xD9t61MLT9L1N773dzlOA==" crossorigin="anonymous" />
+</head>
+​
+
+<body class="antialiased-subpixel text-left layout-row">
+  <div class="w-full max-w-lg mx-auto mt-20 p-5">
+    <h2 class="font-bold text-sm text-red-600"></h2>
+
+    <h1 class="font-bold text-2xl text-black">
+      Application Offline.
+    </h1>
+
+    <p class="text-gray-900">
+      We're sorry, something is not right and it's most likely our fault.
+    </p>
+    <p class="text-gray-900 text-base">
+      If the issue persists, please open a
+      <a class="text-blue-600" href="mailto:support@mjwebs.io?subject=Internal Error 1000 | Ray ID:::RAY_ID::&body=Describe issue here...">
+        support ticket.
+      </a>
+    </p>
+
+    <div class="text-gray-400 pt-4 text-sm">
+      <span>
         ::CLOUDFLARE_ERROR_1000S_BOX::
+      </span>
+      <p>
+        Ray ID: ::RAY_ID::
+      </p>
+      <p>
+        Client IP: ::CLIENT_IP::
+      </p>
     </div>
 
-    <p>Please provide the following information to your administrator for troubleshooting:</p>
-    <ul>
-        <li><strong>Ray ID:</strong> ::RAY_ID::</li>
-        <li><strong>Client IP:</strong> ::CLIENT_IP::</li>
-        <li><strong>Location:</strong> ::GEO::</li>
-    </ul>
+  </div>
 </body>
+
 </html>
