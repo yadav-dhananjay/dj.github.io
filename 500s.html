@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>500 Internal Server Error</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            text-align: center;
+            padding: 50px;
+        }
+        .container {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 40px;
+            max-width: 600px;
+            margin: auto;
+        }
+        h1 {
+            color: #d9534f; /* A red color for error */
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .suggestion {
+            margin-top: 30px;
+            font-size: 16px;
+            color: #666;
+        }
+        .error-details {
+            margin-top: 20px;
+            /* Using the h1 styles for the main message in the new location */
+            color: #d9534f; 
+            font-size: 24px; /* Adjusting font size to be a bit smaller than the original H1 */
+            border-top: none; /* Removed the top border as this is now a primary message */
+            padding-top: 0;
+            text-align: center; /* Centering the main error message */
+        }
+        /* Specific styles for the technical details within .error-details */
+        .error-details .tech-info {
+            margin-top: 20px;
+            border-top: 1px solid #eee;
+            padding-top: 15px;
+            font-size: 12px;
+            color: #999;
+            text-align: left;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- The H1 is removed from here -->
+
+        <p><strong>Oops! Something went wrong on our end.</strong></p>
+        <p>We apologize for the inconvenience. Our team has been notified and is working to fix the issue.</p>
+        
+        <div class="suggestion">
+            <p>Please try one of the following options:</p>
+            <ul>
+                <li>Refresh the page in a few minutes.</li>
+                <li>Go back to the <a href="/">homepage</a>.</li>
+                <li>Visit our <a href="/contact">contact page</a> if the problem persists.</li>
+            </ul>
+        </div>
+
+        <div class="error-details">
+            <!-- Moved the main 500 error message here -->
+            <p>500 Internal Server Error</p>
+            
+            <div class="tech-info">
+                <!-- Placeholders for dynamic info provided by the server environment -->
+                <p>::CLOUDFLARE_ERROR_500S_BOX::</p>
+                <p>Ray ID: ::RAY_ID::</p>
+                <p>Client IP: ::CLIENT_IP::</p>
+                <p>Location: ::GEO::</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
